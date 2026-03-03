@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-serif font-semibold tracking-tight;
+  }
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 1.875rem;
+    line-height: 1.3;
+  }
+}
+

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: oklch(0.98 0.001 0);
+  --foreground: oklch(0.11 0.01 65);
+  --secondary: oklch(0.88 0.02 70);
+  --muted: oklch(0.8 0.015 70);
+  --muted-foreground: oklch(0.4 0.015 65);
+  --accent: oklch(0.3 0.08 140);
+  --accent-foreground: oklch(0.98 0.001 0);
+  --border: oklch(0.88 0.02 70);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    line-height: 1.8;
+    letter-spacing: 0.003em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-semibold;
+    letter-spacing: -0.02em;
+  }
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 1.875rem;
+    line-height: 1.3;
+  }
+}
+
+@layer components {
+  .container-polygon {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1280px;
+  }
+  @media (min-width: 640px) {
+    .container-polygon {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-polygon {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
