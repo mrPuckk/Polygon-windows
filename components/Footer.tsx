@@ -18,13 +18,13 @@ export function Footer() {
               )}
               {"links" in column && (
                 <ul className="space-y-2 text-xs text-muted-foreground">
-                  {column.links.map((label) => (
-                    <li key={label}>
+                  {column.links.map((link) => (
+                    <li key={typeof link === "string" ? link : link.label}>
                       <Link
-                        href="#"
+                        href={typeof link === "string" ? "#" : link.href}
                         className="transition-colors hover:text-foreground"
                       >
-                        {label}
+                        {typeof link === "string" ? link : link.label}
                       </Link>
                     </li>
                   ))}

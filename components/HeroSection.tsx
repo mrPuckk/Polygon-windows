@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { heroContent } from "@/content/home";
 
 export function HeroSection() {
@@ -18,12 +19,13 @@ export function HeroSection() {
                 {heroContent.body}
               </p>
             </div>
-            <button
-              type="button"
+            <Link
+              href="/estimator"
               className="inline-flex items-center justify-center rounded-md bg-accent px-8 py-3 text-sm font-medium tracking-wide text-accent-foreground transition-colors hover:bg-accent/90 focus-visible:outline focus-visible:ring-2 focus-visible:ring-accent/50"
+              aria-label="Get a quotation"
             >
               {heroContent.primaryCta}
-            </button>
+            </Link>
           </div>
         </div>
         <div className="relative flex items-center justify-center overflow-hidden bg-muted/30">

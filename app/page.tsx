@@ -3,7 +3,6 @@ import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
 import { ProductGridSection } from "@/components/ProductGridSection";
 import { PainPointsSection } from "@/components/PainPointsSection";
-import { ProfileSystemsSection } from "@/components/ProfileSystemsSection";
 import { FeatureGridSection } from "@/components/FeatureGridSection";
 import { HealingLivingSection } from "@/components/HealingLivingSection";
 import { ProcessSection } from "@/components/ProcessSection";
@@ -17,7 +16,6 @@ export default function HomePage() {
         <HeroSection />
         <ProductGridSection />
         <PainPointsSection />
-        <ProfileSystemsSection />
         <FeatureGridSection />
         <HealingLivingSection />
         <ProcessSection />

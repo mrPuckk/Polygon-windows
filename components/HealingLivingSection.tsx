@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { healingLivingContent } from "@/content/home";
 
@@ -19,13 +20,14 @@ export function HealingLivingSection() {
             <p className="mb-8 text-base leading-relaxed text-muted-foreground">
               {healingLivingContent.body}
             </p>
-            <button
-              type="button"
+            <Link
+              href="/estimator"
               className="inline-flex items-center justify-center rounded-md bg-accent px-8 py-3 text-sm font-medium tracking-wide text-accent-foreground transition-colors hover:bg-accent/90 focus-visible:outline focus-visible:ring-2 focus-visible:ring-accent/50"
+              aria-label="Explore systems"
             >
               {healingLivingContent.ctaLabel}{" "}
               <ArrowRight className="ml-2 h-4 w-4" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

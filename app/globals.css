@@ -11,6 +11,8 @@
   --accent: oklch(0.3 0.08 140);
   --accent-foreground: oklch(0.98 0.001 0);
   --border: oklch(0.88 0.02 70);
+  /* Matches nav h-16 (4rem). Use for content offset and scroll-margin under fixed header. */
+  --nav-height: 4rem;
 }
 
 @layer base {

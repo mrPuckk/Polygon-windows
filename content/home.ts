@@ -1,18 +1,18 @@
 export const navigationContent = {
   brand: "POLYGON WINDOWS",
   links: [
-    { label: "SYSTEMS", href: "#" },
-    { label: "PERFORMANCE", href: "#" },
-    { label: "ABOUT", href: "#" },
+    { label: "PRICE ESTIMATOR", href: "/estimator" },
+    { label: "ABOUT", href: "/about" },
   ],
   ctaLabel: "CONTACT",
+  ctaHref: "/about#contact",
 } as const;
 
 export const heroContent = {
   eyebrow: "PRECISION ENGINEERED",
   title: "TIMELESS DESIGN, UNMATCHED PERFORMANCE",
   body: "Polygon partners with established premium fabrication teams to deliver aluminium systems that are built for performance, crafted with precision, and priced with integrity.",
-  primaryCta: "BOOK A CONSULTATION",
+  primaryCta: "QUOTATION",
   image: {
     src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663372502898/548bPj3wr3XkSkZDY6HRRh/hero-healing-architecture-nNx678wAmp8kyeLtMPE7U2.webp",
     alt: "Polygon Windows System",
@@ -114,36 +114,6 @@ export const painPointsContent = {
   ],
 } as const;
 
-export const profileSystemsContent = {
-  title: "Engineered with Proven Profile Systems",
-  systems: [
-    {
-      name: "Maxpro JP",
-      label: "Maxpro JP Profile",
-      description:
-        "Premium aluminium profile system with advanced thermal break technology for superior performance.",
-    },
-    {
-      name: "Xingfa Class A",
-      label: "Xingfa Class A Profile",
-      description:
-        "High-performance architectural profile meeting international standards for durability and precision.",
-    },
-    {
-      name: "Romadio Thermal Break",
-      label: "Romadio Thermal Break",
-      description:
-        "Specialized thermal break profile optimizing energy efficiency without compromising structural integrity.",
-    },
-    {
-      name: "Ponzio",
-      label: "Ponzio Profile",
-      description:
-        "Versatile profile system combining aesthetic refinement with engineering excellence for diverse applications.",
-    },
-  ],
-} as const;
-
 export const featureGridContent = {
   title: "Why Homeowners Choose Polygon",
   features: [
@@ -185,6 +155,36 @@ export const closingManifestoContent = {
   secondaryCta: "Request Specification Pack",
 } as const;
 
+export const aboutContent = {
+  contact: {
+    heading: "Get in touch",
+    subheading: "We’d love to hear about your project.",
+    email: "sales@polygonwindows.com.au",
+    phone: "+61 3 0000 0000",
+    phoneLabel: "Phone",
+    emailLabel: "Email",
+  },
+  company: {
+    heading: "Our story",
+    body: "Polygon Windows began with a simple belief: that homes deserve windows and doors that perform as well as they look. After years in architectural aluminium and fabrication, our founders saw a gap—between mass-market products that cut corners and ultra-premium brands that priced out everyday homeowners. We set out to partner with proven fabrication teams and offer precision-engineered systems at transparent, fair prices. Today we work with established manufacturers across Australia and Asia to bring you thermal break systems, acoustic glazing options, and low-VOC finishes—without the markup of a middleman. Every specification we offer is one we’d put in our own homes.",
+  },
+  founders: {
+    heading: "Founders",
+    people: [
+      {
+        name: "Eric Phung",
+        role: "Co-founder & Technical Director",
+        bio: " ",
+      },
+      {
+        name: "Jessica Nguyen",
+        role: "Co-founder & Operations",
+        bio: "Sarah brings experience from project management and supply chain in construction. She ensures our partners meet our standards and that every order is tracked from specification to delivery.",
+      },
+    ],
+  },
+} as const;
+
 export const footerContent = {
   columns: [
     {
@@ -192,16 +192,20 @@ export const footerContent = {
       body: "Precision-engineered aluminium window and door systems designed for health, silence, and thermal balance.",
     },
     {
-      title: "SYSTEMS",
-      links: ["Sliding Doors", "Fixed Windows", "Hinged Doors"],
-    },
-    {
       title: "COMPANY",
-      links: ["About", "Engineering", "Contact"],
+      links: [
+        { label: "About", href: "/about" },
+        { label: "Price Estimator", href: "/estimator" },
+        { label: "Contact", href: "/about#contact" },
+      ],
     },
     {
       title: "LEGAL",
-      links: ["Privacy", "Terms", "Certifications"],
+      links: [
+        { label: "Privacy", href: "#" },
+        { label: "Terms", href: "#" },
+        { label: "Certifications", href: "#" },
+      ],
     },
   ],
   bottomLeft: "© 2026 Polygon Windows. All rights reserved.",
