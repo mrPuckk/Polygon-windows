@@ -9,7 +9,7 @@ export const navigationContent = {
 } as const;
 
 export const heroContent = {
-  eyebrow: "PRECISION ENGINEERED",
+  eyebrow: "PRECISION",
   title: "TIMELESS DESIGN, UNMATCHED PERFORMANCE",
   body: "Polygon partners with established premium fabrication teams to deliver aluminium systems that are built for performance, crafted with precision, and priced with integrity.",
   primaryCta: "BOOK A CONSULTATION",

@@ -10,7 +10,8 @@ export const navigationContent = {
 
 export const heroContent = {
   eyebrow: "PRECISION ENGINEERED",
-  title: "TIMELESS DESIGN, UNMATCHED PERFORMANCE",
+  titleLead: "LESS OVERHEAD",
+  titleMain: "MORE VALUE",
   body: "Polygon partners with established premium fabrication teams to deliver aluminium systems that are built for performance, crafted with precision, and priced with integrity.",
   primaryCta: "QUOTATION",
   image: {
@@ -21,6 +22,12 @@ export const heroContent = {
     label: "VIEW",
     value: "360°",
   },
+} as const;
+
+export const estimatorHeadlineContent = {
+  heading: "Cheap can cost you more",
+  subtext:
+    "Lower upfront price often leads to higher long-term costs.",
 } as const;
 
 export const productGridContent = [

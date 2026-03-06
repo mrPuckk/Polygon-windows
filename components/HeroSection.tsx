@@ -7,13 +7,27 @@ export function HeroSection() {
     <section className="pt-20">
       <div className="grid min-h-screen grid-cols-1 gap-0 lg:grid-cols-2">
         <div className="flex flex-col justify-center bg-background px-6 py-12 lg:px-12 lg:py-0">
-          <div className="max-w-lg">
+          <div className="max-w-lg text-center">
             <div className="mb-8">
               <p className="mb-6 text-xs tracking-widest text-muted-foreground">
                 {heroContent.eyebrow}
               </p>
-              <h1 className="mb-6 font-serif text-5xl font-bold leading-tight lg:text-6xl">
-                {heroContent.title}
+              <h1 className="mb-6 flex flex-col items-center font-serif leading-tight">
+                <span className="hero-lead-anim text-2xl font-medium tracking-[0.25em] text-muted-foreground/90 lg:text-3xl">
+                  {heroContent.titleLead}
+                </span>
+                <span
+                  className="hero-main-anim mt-2 text-5xl font-bold tracking-tight text-foreground drop-shadow-[0_1px_2px_rgba(0,0,0,0.06)] lg:text-6xl xl:text-7xl"
+                  style={{
+                    background:
+                      "linear-gradient(180deg, var(--foreground) 0%, oklch(0.15 0.01 65) 100%)",
+                    WebkitBackgroundClip: "text",
+                    backgroundClip: "text",
+                    color: "transparent",
+                  }}
+                >
+                  {heroContent.titleMain}
+                </span>
               </h1>
               <p className="mb-8 text-sm leading-relaxed text-muted-foreground">
                 {heroContent.body}

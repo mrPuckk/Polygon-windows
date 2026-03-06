@@ -17,9 +17,15 @@ export function HeroSection() {
           </p>
           <h1
             id="hero-title"
+            className="text-3xl lg:text-6xl font-serif font-bold leading-tight mb-6"
+          >
+            {heroContent.titleTop}
+          </h1>
+          <h1
+            id="hero-title"
             className="text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6"
           >
-            {heroContent.title}
+            {heroContent.titleMain}
           </h1>
           <p className="text-sm leading-relaxed text-muted-foreground mb-8">
             {heroContent.body}

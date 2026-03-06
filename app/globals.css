@@ -63,4 +63,66 @@
       padding-right: 2rem;
     }
   }
+
+  /* Hero headline load animations – subtle, premium */
+  @keyframes hero-lead-in {
+    from {
+      opacity: 0;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0.75;
+      transform: scale(0.9);
+    }
+  }
+  @keyframes hero-main-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  .hero-lead-anim {
+    opacity: 0;
+    animation: hero-lead-in 0.75s ease-out forwards;
+  }
+  .hero-main-anim {
+    opacity: 0;
+    animation: hero-main-in 0.8s ease-out 0.15s forwards;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-lead-anim {
+      animation: none;
+      opacity: 0.75;
+      transform: scale(1);
+    }
+    .hero-main-anim {
+      animation: none;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* Estimator page headline – subtle fade-in */
+  @keyframes estimator-headline-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .estimator-headline-fade {
+    opacity: 0;
+    animation: estimator-headline-fade-in 0.7s ease-out forwards;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .estimator-headline-fade {
+      animation: none;
+      opacity: 1;
+    }
+  }
 }
