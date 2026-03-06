@@ -12,7 +12,7 @@ export const heroContent = {
   eyebrow: "PRECISION ENGINEERED",
   titleLead: "LESS OVERHEAD",
   titleMain: "MORE VALUE",
-  body: "Polygon partners with established premium fabrication teams to deliver aluminium systems that are built for performance, crafted with precision, and priced with integrity.",
+  body: "Polygon invests where it matters most — engineering, craftsmanship, and long-term performance — not unnecessary overhead that adds cost without adding value",
   primaryCta: "QUOTATION",
   image: {
     src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663372502898/548bPj3wr3XkSkZDY6HRRh/hero-healing-architecture-nNx678wAmp8kyeLtMPE7U2.webp",

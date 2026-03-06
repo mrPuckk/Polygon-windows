@@ -29,7 +29,7 @@ export function HeroSection() {
                   {heroContent.titleMain}
                 </span>
               </h1>
-              <p className="mb-8 text-sm leading-relaxed text-muted-foreground">
+              <p className="mx-auto mb-8 max-w-[520px] text-base leading-[1.6] text-muted-foreground">
                 {heroContent.body}
               </p>
             </div>
