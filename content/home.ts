@@ -5,7 +5,7 @@ export const navigationContent = {
     { label: "ABOUT", href: "/about" },
   ],
   ctaLabel: "CONTACT",
-  ctaHref: "/about#contact",
+  ctaHref: "/contact",
 } as const;
 
 export const heroContent = {
@@ -204,7 +204,7 @@ export const footerContent = {
       links: [
         { label: "About", href: "/about" },
         { label: "Price Estimator", href: "/estimator" },
-        { label: "Contact", href: "/about#contact" },
+        { label: "Contact", href: "/contact" },
       ],
     },
     {
