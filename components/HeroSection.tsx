@@ -5,9 +5,9 @@ import { heroContent } from "@/content/home";
 export function HeroSection() {
   return (
     <section className="pt-20">
-      <div className="grid min-h-screen grid-cols-1 gap-0 lg:grid-cols-2">
-        <div className="flex flex-col justify-center bg-background px-6 py-12 lg:px-12 lg:py-0">
-          <div className="max-w-lg text-center">
+      <div className="grid min-h-screen grid-cols-1 gap-0 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
+        <div className="flex flex-col justify-center bg-background px-6 py-12 lg:pl-16 lg:pr-10 lg:py-0 xl:pl-24 xl:pr-16">
+          <div className="mx-auto w-full max-w-lg text-center lg:max-w-md">
             <div className="mb-8">
               <p className="mb-6 text-xs tracking-widest text-muted-foreground">
                 {heroContent.eyebrow}
@@ -29,7 +29,7 @@ export function HeroSection() {
                   {heroContent.titleMain}
                 </span>
               </h1>
-              <p className="mx-auto mb-8 max-w-[520px] text-base leading-[1.6] text-muted-foreground">
+              <p className="mx-auto mb-8 max-w-[500px] text-lg font-medium leading-[1.7] tracking-[0.02em] text-foreground/85">
                 {heroContent.body}
               </p>
             </div>
@@ -42,24 +42,15 @@ export function HeroSection() {
             </Link>
           </div>
         </div>
-        <div className="relative flex items-center justify-center overflow-hidden bg-muted/30">
-          <div className="absolute top-8 right-8 z-10 flex h-32 w-32 items-center justify-center rounded-full border-2 border-accent/30">
-            <div className="text-center">
-              <p className="text-xs font-medium text-accent">
-                {heroContent.badge.label}
-              </p>
-              <p className="font-serif text-2xl font-bold text-accent">
-                {heroContent.badge.value}
-              </p>
-            </div>
-          </div>
+        <div className="relative flex min-h-[50vh] items-center justify-center overflow-hidden bg-muted/30 lg:min-h-0">
           <Image
             src={heroContent.image.src}
             alt={heroContent.image.alt}
             width={960}
             height={960}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-[60%_center]"
             priority
+            sizes="(max-width: 1023px) 100vw, 67vw"
           />
         </div>
       </div>

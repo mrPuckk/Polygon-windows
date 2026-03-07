@@ -9,13 +9,14 @@ export const navigationContent = {
 } as const;
 
 export const heroContent = {
-  eyebrow: "PRECISION ENGINEERED",
+  eyebrow: "REAL VALUE FOR HOMEOWNERS",
   titleLead: "LESS OVERHEAD",
   titleMain: "MORE VALUE",
-  body: "Polygon invests where it matters most — engineering, craftsmanship, and long-term performance — not unnecessary overhead that adds cost without adding value",
-  primaryCta: "QUOTATION",
+  body: "POLYGON invests where it matters most — craftsmanship, long-term performance and customer experience — not unnecessary overhead that adds cost without adding value, and not a race to the lowest price built on scrap-grade aluminium, inferior glass or low-quality hardware.",
+  primaryCta: "GET QUOTATION",
   image: {
-    src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663372502898/548bPj3wr3XkSkZDY6HRRh/hero-healing-architecture-nNx678wAmp8kyeLtMPE7U2.webp",
+    // src: "https://d2xsxph8kpxj0f.cloudfront.net/310519663372502898/548bPj3wr3XkSkZDY6HRRh/hero-healing-architecture-nNx678wAmp8kyeLtMPE7U2.webp",
+    src: "/images/cherry_blossom_watermark.jpg",
     alt: "Polygon Windows System",
   },
   badge: {
