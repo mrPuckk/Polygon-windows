@@ -14,8 +14,8 @@ export default function HomePage() {
       <Navigation />
       <main>
         <HeroSection />
-        <ProductGridSection />
         <PainPointsSection />
+        <ProductGridSection />
         <FeatureGridSection />
         <HealingLivingSection />
         <ProcessSection />
